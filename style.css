@@ -1,0 +1,198 @@
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #2196f3;
+    color: white;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+body {
+    margin: 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.welcome {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome > p {
+    max-width: 500px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+/* === Team Member Card Styles === */
+.tm-card {
+    --tm-card-radius: 12px;
+    --tm-card-padding: 2rem 1.5rem;
+    --tm-card-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+
+    background-color: #ffffff;
+    border-radius: var(--tm-card-radius);
+    padding: var(--tm-card-padding);
+    box-shadow: var(--tm-card-shadow);
+    text-align: center;
+}
+
+.tm-card .tm-card-avatar {
+    width: 112px; /* 7rem */
+    height: 112px; /* 7rem */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 3px #a5b4fc; /* An indigo-tinted shadow border */
+}
+
+.tm-card .tm-card-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.tm-card .tm-card-role {
+    font-size: 1rem;
+    color: #4f46e5; /* Indigo */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.tm-card .tm-card-description {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.tm-card .tm-card-social-link {
+    color: #9ca3af; /* Gray for icons */
+    transition: color 0.2s ease-in-out;
+}
+
+.tm-card .tm-card-social-link:hover {
+    color: #4f46e5;
+}
+
+.tm-card .tm-card-social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* === Grid Container for the Cards === */
+.cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+#contact-form {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.feedback-input {
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    border: 2px solid hsl(224, 50%, 60%);
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+#submit-email {
+    width: 100%;
+    background:hsl(224, 50%, 60%);
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:-4px;
+    font-weight:700;
+  }
