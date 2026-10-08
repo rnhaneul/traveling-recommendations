@@ -34,7 +34,8 @@ async function getRecommendation() {
         const temples = data.temples
             .filter(temple =>
                 temple.name.toLowerCase().includes(cleanInput) ||
-                temple.description.toLowerCase().includes(cleanInput)
+                temple.description.toLowerCase().includes(cleanInput) ||
+                'temple'.includes(cleanInput)
             )
 
         const beaches = data.beaches
