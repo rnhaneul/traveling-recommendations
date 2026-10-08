@@ -206,3 +206,19 @@ textarea {
   align-content: space-around;
   gap: 8px;
 }
+
+.recommendation {
+    display: grid;
+    background-color: #ffffff;
+    justify-items: center;
+    max-width: 420px;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+#result-img {
+    margin-top: 2.5%;
+    width: 400px;
+    height: 250px;
+    border-radius: 12.5px;
+}
