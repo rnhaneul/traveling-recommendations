@@ -1,33 +1,38 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Travel Today</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
 
-    <body>
-        <header>
-            <div class="topnav">
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Today</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+    </header>
+    <main>
+        <div class="contact-us-container">
+            <div style="text-align: center">
+                <h1>Contact Us</h1>
+                <p>Reach out to our experts and start your journey</p>
             </div>
-        </header>
-        <main>
-            <div class="contact-us-container">
-                <div style="text-align: center">
-                    <h1>Contact Us</h1>
-                    <p>Reach out to our experts and start your journey</p>
-                </div>
-                <form id="contact-form">      
-                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                    <input type="submit" value="SUBMIT" id="submit-email"/>
-                </form>
-            </div>
-        </main>
-    </body>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                <label for="email">Email Address</label>
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <label for="text">Your Comments</label>
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT" id="submit-email" />
+            </form>
+        </div>
+    </main>
+</body>
+
 </html>

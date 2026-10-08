@@ -73,7 +73,7 @@ body {
     flex-direction: column;
 }
 
-.welcome > p {
+.welcome>p {
     max-width: 500px;
 }
 
@@ -105,15 +105,18 @@ u {
 }
 
 .tm-card .tm-card-avatar {
-    width: 112px; /* 7rem */
-    height: 112px; /* 7rem */
+    width: 112px;
+    /* 7rem */
+    height: 112px;
+    /* 7rem */
     border-radius: 50%;
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
     border: 3px solid #ffffff;
-    box-shadow: 0 0 0 3px #a5b4fc; /* An indigo-tinted shadow border */
+    box-shadow: 0 0 0 3px #a5b4fc;
+    /* An indigo-tinted shadow border */
 }
 
 .tm-card .tm-card-name {
@@ -126,7 +129,8 @@ u {
 
 .tm-card .tm-card-role {
     font-size: 1rem;
-    color: #4f46e5; /* Indigo */
+    color: #4f46e5;
+    /* Indigo */
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -139,7 +143,8 @@ u {
 }
 
 .tm-card .tm-card-social-link {
-    color: #9ca3af; /* Gray for icons */
+    color: #9ca3af;
+    /* Gray for icons */
     transition: color 0.2s ease-in-out;
 }
 
@@ -198,13 +203,13 @@ textarea {
 }
 
 #search-result {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: space-around;
-  gap: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    gap: 8px;
 }
 
 .recommendation {
@@ -221,4 +226,11 @@ textarea {
     width: 400px;
     height: 250px;
     border-radius: 12.5px;
+}
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
