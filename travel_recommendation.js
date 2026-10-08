@@ -29,8 +29,9 @@ async function getRecommendation() {
         const cities = data.countries.flatMap(country => country.cities)
             .filter(city =>
                 city.name.toLowerCase().includes(cleanInput) ||
-                city.description.toLowerCase().includes(cleanInput)
-            )
+                city.description.toLowerCase().includes(cleanInput) ||
+                'country'.includes(cleanInput)
+        )
 
         const temples = data.temples
             .filter(temple =>
@@ -46,7 +47,7 @@ async function getRecommendation() {
             )
 
         const results = [
-            ...countries,
+            // ...countries,
             ...cities,
             ...temples,
             ...beaches
