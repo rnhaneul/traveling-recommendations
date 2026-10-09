@@ -62,8 +62,14 @@ body {
         "Noto Sans",
         sans-serif;
     background: url(background.jpg);
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 .welcome {
@@ -79,11 +85,14 @@ body {
 
 .about-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     color: rgb(0, 0, 0);
     font-weight: 600;
+}
+
+.about-container>p {
+    width: 40%;
 }
 
 a,
@@ -160,7 +169,8 @@ u {
 /* === Grid Container for the Cards === */
 .cards-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
     padding: 1.5rem;
 }
