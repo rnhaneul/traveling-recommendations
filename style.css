@@ -229,6 +229,12 @@ textarea {
     max-width: 420px;
     padding: 8px;
     border-radius: 25px;
+    margin: 10px;
+}
+
+.recommendation>p {
+    display: flex;
+    text-align: center;
 }
 
 #result-img {
